@@ -1,0 +1,415 @@
+.desktop1-container {
+  min-height: 100vh;
+}
+.desktop1-desktop1 {
+  width: 100%;
+  height: 2000px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-user-profile-frame1 {
+  top: 112px;
+  left: 0px;
+  width: 100vw;
+  height: 2000px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.desktop1-user-profile-frame2 {
+  top: 30px;
+  left: 84px;
+  width: 1374px;
+  height: 824px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 246, 246, 1);
+}
+.desktop1-wish-list {
+  top: 61px;
+  left: 46px;
+  width: 1282px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-text {
+  top: 18px;
+  left: 37px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-classic11 {
+  top: 9px;
+  left: 276px;
+  width: 106px;
+  height: 171px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-classic21 {
+  top: 8px;
+  left: 493px;
+  width: 112px;
+  height: 172px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-classic31 {
+  top: 9px;
+  left: 716px;
+  width: 112px;
+  height: 172px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-classic41 {
+  top: 8px;
+  left: 939px;
+  width: 112px;
+  height: 170px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-wish-list1 {
+  top: 277px;
+  left: 46px;
+  width: 1282px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-text02 {
+  top: 20px;
+  left: 40px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-romance11 {
+  top: 13px;
+  left: 273px;
+  width: 112px;
+  height: 164px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-romance21 {
+  top: 11px;
+  left: 495px;
+  width: 112px;
+  height: 169px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-romance31 {
+  top: 13px;
+  left: 716px;
+  width: 112px;
+  height: 174px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-romance41 {
+  top: 13px;
+  left: 940px;
+  width: 112px;
+  height: 171px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-materialsymbolskeyboardarrowdown {
+  top: 50px;
+  left: 1150px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.desktop1-materialsymbolskeyboardarrowdown5 {
+  top: 50px;
+  left: 1150px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.desktop1-wish-list2 {
+  top: 493px;
+  left: 46px;
+  width: 1282px;
+  height: 190px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-text04 {
+  top: 18px;
+  left: 43px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-psychology11 {
+  top: 11px;
+  left: 275px;
+  width: 112px;
+  height: 168px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-psychology21 {
+  top: 9px;
+  left: 494px;
+  width: 112px;
+  height: 170px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-psychology31 {
+  top: 10px;
+  left: 713px;
+  width: 112px;
+  height: 170px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-psychology41 {
+  top: 10px;
+  left: 932px;
+  width: 112px;
+  height: 172px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-materialsymbolskeyboardarrowdown1 {
+  top: 50px;
+  left: 1151px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.desktop1-selector {
+  top: 18px;
+  left: 1350px;
+  width: 187px;
+  height: 216px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.desktop1-materialsymbolskeyboardarrowdown2 {
+  top: 0px;
+  left: 30px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.desktop1-user-profile-header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.desktop1-logo {
+  top: 13px;
+  left: 25px;
+  width: 98px;
+  height: 94px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.desktop1-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-logo1 {
+  top: 14.338982582092285px;
+  left: 12.148760795593262px;
+  width: 74px;
+  height: 65px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-search-frame {
+  top: 24.5px;
+  left: 400px;
+  width: 731px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.desktop1-text06 {
+  top: 12px;
+  left: 81px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-radixiconsmagnifyingglass {
+  top: 14px;
+  left: 25px;
+  width: 44px;
+  height: 42px;
+  position: absolute;
+}
+.desktop1-home-btn {
+  top: 24.5px;
+  left: 170px;
+  width: 173px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.desktop1-text08 {
+  top: 13px;
+  left: 31px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-materialsymbolskeyboardarrowdown3 {
+  top: 0px;
+  left: 30px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.desktop1-singer1 {
+  top: 13px;
+  left: 1200px;
+  width: 97px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-materialsymbolskeyboardarrowdown4 {
+  top: 18px;
+  left: 1350px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
