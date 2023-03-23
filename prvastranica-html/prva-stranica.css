@@ -1,0 +1,239 @@
+.prva-stranica-container {
+  min-height: 100vh;
+}
+.prva-stranica-prva-stranica {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.prva-stranica-header {
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-bottom: 0px;
+  justify-content: center;
+  background-color: rgba(189, 80, 80, 1);
+}
+.prva-stranica-group1 {
+  width: 121px;
+  height: 118px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 259px;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.prva-stranica-ellipse1 {
+  top: 2px;
+  left: 0px;
+  width: 121px;
+  height: 110px;
+  position: absolute;
+  border-color: transparent;
+}
+.prva-stranica-logo1 {
+  top: 18px;
+  left: 15px;
+  width: 91px;
+  height: 81px;
+  position: absolute;
+  border-color: transparent;
+}
+.prva-stranica-text {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 70px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 259px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.prva-stranica-text02 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.prva-stranica-frame1 {
+  top: 112px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.prva-stranica-frame2 {
+  top: 30px;
+  left: 84px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 0px 100px;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-end;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(255, 246, 246, 1);
+}
+.prva-stranica-group2 {
+  width: 1260px;
+  height: 783px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.prva-stranica-input-username {
+  top: 120px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 371.0429382324219px;
+  height: 59px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  text-align: left;
+  padding: 12px 10px;
+}
+.prva-stranica-input-password {
+  top: 252px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 371.0429382324219px;
+  height: 59px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  text-align: left;
+  padding: 12px 10px;
+}
+.prva-stranica-button-log-in {
+  top: 384px;
+  width: 371.0429382324219px;
+  height: 65px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+
+}
+.prva-stranica-text04 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: center;
+  font-style: Regular;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  
+}
+.prva-stranica-text06 {
+  top: 467px;
+  left:0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 371px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.prva-stranica-slika-sajt11 {
+  top: 1.1368683772161603e-13px; 
+  left: 420.79754638671875px; 
+  width: 769px;
+  height: 703px;
+  position: absolute;
+  border-color: transparent;
+}
