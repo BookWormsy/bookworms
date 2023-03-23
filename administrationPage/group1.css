@@ -1,0 +1,510 @@
+.group1-container {
+  min-height: 100vh;
+}
+.group1-group1 {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.group1-frame1 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vw;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.group1-user-profile {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.group1-admin-header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  padding: 23px 25px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(189, 80, 80, 1);
+  align-items: center;
+  justify-content: center;
+}
+.group1-header-group {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  padding: 23px 25px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(189, 80, 80, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.group1-logo {
+  top: 13px;
+  left: 25px;
+  width: 98px;
+  height: 94px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.group1-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.group1-logo1 {
+  top: 14.338982582092285px;
+  left: 12.148760795593262px;
+  width: 74px;
+  height: 65px;
+  position: absolute;
+  border-color: transparent;
+}
+.group1-search-frame {
+  top: 24.5px;
+  left: 400px;
+  width: 731px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.group1-text {
+  top: 12px;
+  left: 81px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-radixiconsmagnifyingglass {
+  top: 14px;
+  left: 25px;
+  width: 44px;
+  height: 42px;
+  position: absolute;
+}
+.group1-home-btn {
+  top: 24.5px;
+  left: 170px;
+  width: 173px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.group1-text02 {
+  top: 13px;
+  left: 31px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-mdiusercircleoutlineheader {
+  top: 13px;
+  left: 1200px;
+  width: 97px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.group1-selector {
+  top: 18px;
+  left: 1350px;
+  width: 187px;
+  height: 216px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.group1-materialsymbolskeyboardarrowdown {
+  top: 0px;
+  left: 30px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.group1-user-profile-frame1 {
+  top: 112px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.group1-user-profile-frame2 {
+  top: 30px;
+  left: 84px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+  background-color: rgba(255, 246, 246, 1);
+}
+.group1-frame5 {
+  top: 65px;
+  left: 118px;
+  width: 415px;
+  height: 611px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255, 1);
+}
+.group1-text04 {
+  top: 39px;
+  left: 92px;
+  color: rgb(59, 56, 56);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-frame6 {
+  top: 117px;
+  left: 30px;
+  width: 350px;
+  height: 90px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: rgb(59, 56, 56);
+  background-color: rgb(254, 243, 243);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: rgb(226, 215, 174);
+}
+.group1-text06 {
+  top: 28px;
+  left: 15px;
+  color: rgb(52, 49, 49);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-button-upgrade {
+  top: 28px;
+  left: 170px;
+  width: 80px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-center;
+  text-align: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: rgb(50, 45, 45);
+}
+.group1-text08 {
+  top: 6px;
+  /* left: 18px; */
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-button-upgrade1 {
+  top: 28px;
+  left: 260px;
+  width: 80px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: rgb(50, 45, 45);
+}
+.group1-text10 {
+  top: 6px;
+  left: 11px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-frame61 {
+  top: 65px;
+  left: 752px;
+  width: 415px;
+  height: 611px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255, 1);
+}
+.group1-text12 {
+  top: 39px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-frame62 {
+  top: 117px;
+  left: 30px;
+  width: 350px;
+  height: 90px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: rgb(59, 56, 56);
+  background-color: rgb(254, 243, 243);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: rgb(226, 215, 174);
+}
+.group1-text14 {
+  top: 14px;
+  left: 20px;
+  color: rgb(52, 49, 49);
+  height: auto;
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-frame7 {
+  top: 28px;
+  left: 260px;
+  width: 80px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: rgb(50, 45, 45);
+}
+.group1-text19 {
+  top: 6px;
+  left: 20px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.group1-button-upgrade2 {
+  top: 28px;
+  left: 170px;
+  width: 80px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-center;
+  text-align: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: rgb(50, 45, 45);
+}
+.group1-text21 {
+  top: 6px;
+  /* left: 18px; */
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 17px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}

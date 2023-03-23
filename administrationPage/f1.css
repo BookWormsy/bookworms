@@ -1,0 +1,353 @@
+.desktop1-container {
+  min-height: 100vh;
+}
+.desktop1-desktop1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.desktop1-user-profile-header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  padding: 23px 25px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(189, 80, 80, 1);
+  align-items: center;
+  justify-content: center;
+}
+.desktop1-logo {
+  top: 13px;
+  left: 25px;
+  width: 98px;
+  height: 94px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.desktop1-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-logo1 {
+  top: 14.338982582092285px;
+  left: 12.148760795593262px;
+  width: 74px;
+  height: 65px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-search-frame {
+  top: 24.5px;
+  left: 400px;
+  width: 731px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.desktop1-text {
+  top: 12px;
+  left: 81px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-radixiconsmagnifyingglass {
+  top: 14px;
+  left: 25px;
+  width: 44px;
+  height: 42px;
+  position: absolute;
+}
+.desktop1-home-btn {
+  top: 24.5px;
+  left: 170px;
+  width: 173px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.desktop1-text02 {
+  top: 13px;
+  left: 31px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-selector {
+  top: 18px;
+  left: 1350px;
+  width: 187px;
+  height: 216px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+.desktop1-materialsymbolskeyboardarrowdown {
+  top: 0px;
+  left: 30px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.desktop1-singer1 {
+  top: 13px;
+  left: 1200px;
+  width: 97px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-frame1 {
+  top: 112px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.desktop1-frame2 {
+  top: 30px;
+  left: 84px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+  background-color: rgba(255, 246, 246, 1);
+}
+.desktop1-text04 {
+  top: 34px;
+  /* left: 502px; */
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: center;
+  font-style: Regular;
+  text-align: left;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-text06 {
+  top: 132px;
+  /* left: 255px; */
+  color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  align-self: center;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-text11 {
+  top: 305px;
+  left: 145px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-text13 {
+  top: 474px;
+  left: 145px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-text15 {
+  top: 631px;
+  left: 145px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-psi1 {
+  top: 242px;
+  left: 476px;
+  width: 115px;
+  height: 173px;
+  position: absolute;
+  border-color: transparent;
+}
+.desktop1-text17 {
+  top: 357px;
+  left: 687px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-text19 {
+  top: 523px;
+  left: 687px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-text21 {
+  top: 656px;
+  left: 687px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.desktop1-da-vinci-code1 {
+  top: 429px;
+  left: 476px;
+  width: 115px;
+  height: 172px;
+  position: absolute;
+  border-color: transparent;
+}
