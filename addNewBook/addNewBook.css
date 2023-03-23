@@ -1,0 +1,411 @@
+.add-new-book-container {
+  min-height: 100vh;
+}
+.add-new-book-add-new-book {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-user-profile {
+  width: 100vw;
+  height: 1023px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-user-profile-frame1 {
+  top: 112px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.add-new-book-user-profile-frame2 {
+  top: 30px;
+  left: 84px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 32px 500px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: top;
+  background-color: rgba(255, 246, 246, 1);
+}
+.add-new-book-frame9 {
+  height: 726px;
+  display: flex;
+  padding: 0px 15px;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 176px;
+  flex-direction: column;
+}
+.add-new-book-name-text {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.add-new-book-name-frame {
+  width: 374px;
+  height: 44px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  text-align: left;
+  border-color: transparent;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-genre-text {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.add-new-book-user-genre-frame {
+  width: 374px;
+  height: 127px;
+  overflow: hidden;
+  position: relative;
+  align-items: top;
+  vertical-align: top;
+  padding: 10px;
+  flex-shrink: 0;
+  text-align: left;
+  border-color: transparent;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-special-words {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.add-new-book-user-special-words-frame {
+  width: 374px;
+  height: 127px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-button-make-adjustments {
+  width: 255px;
+  height: 65px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 1);
+}
+.add-new-book-text06 {
+  top: 11px;
+  left: 73px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.add-new-book-frame10 {
+  height: 647px;
+  display: flex;
+  padding: 0px 93px 0px 0;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+}
+.add-new-book-button-upgrade-request {
+  width: 324px;
+  height: 66px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  margin-bottom: 39px;
+  background-color: rgba(0, 0, 0, 1);
+}
+.add-new-book-text08 {
+  top: 16px;
+  left: 35px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.add-new-book-user-frame3 {
+  width: 374px;
+  height: 127px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  margin-bottom: 39px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-text10 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 39px;
+  text-decoration: none;
+}
+.add-new-book-user-description-frame {
+  width: 374px;
+  height: 127px;
+  display: flex;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.add-new-book-user-profile-header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height:7rem;
+  display: flex;
+  padding: 23px 25px;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(189, 80, 80, 1);
+  justify-content: center;
+}
+.add-new-book-frame-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  justify-content: center;
+}
+.add-new-book-logo {
+  width: 98px;
+  height: 94px;
+  left: 25px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 53px;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.add-new-book-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.add-new-book-logo1 {
+  top: 14.338982582092285px;
+  left: 12.148760795593262px;
+  width: 74px;
+  height: 65px;
+  position: absolute;
+  border-color: transparent;
+}
+.add-new-book-home-btn {
+  width: 173px;
+  height: 71px;
+  left: 120px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 53px;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.add-new-book-text12 {
+  top: 13px;
+  left: 31px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.add-new-book-search-frame {
+  width: 731px;
+  height: 71px;
+  left: 250px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-right: 53px;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.add-new-book-text14 {
+  top: 12px;
+  left: 81px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.add-new-book-radixiconsmagnifyingglass {
+  top: 14px;
+  left: 25px;
+  width: 44px;
+  height: 42px;
+  position: absolute;
+}
+.add-new-book-singer1 {
+  width: 97px;
+  height: 94px;
+  left: 400px;
+  position: relative;
+  border-color: transparent;
+  margin-right: 53px;
+}
+.add-new-book-vector {
+  width: 49px;
+  height: 32px;
+  left: 450px;
+  position: relative;
+}
