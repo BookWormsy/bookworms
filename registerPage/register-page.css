@@ -1,0 +1,345 @@
+.register-page-register-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: left;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);1
+}
+.register-page-header {
+  width: 100vw;
+  height: 9.375rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  margin-bottom: 0px;
+  justify-content: center;
+  background-color: rgba(189, 80, 80, 1);
+}
+.register-page-groupforlogo {
+  width: 9rem;
+  height: 9rem;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 43.75rem;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.register-page-circleforlogo {
+  top: 0px;
+  left: 0px;
+  width: 9rem;
+  height: 9rem;
+  position: absolute;
+  border-color: transparent;
+}
+.register-page-logo1 {
+  top: 0.90625rem;
+  left: 0rem;
+  width: 8.1875rem;
+  height: 6.625rem;
+  position: absolute;
+  border-color: transparent;
+}
+.register-page-text {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 4.6rem;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 43.75rem;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.register-page-text02 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 3rem;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.register-page-bodyframe {
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(189, 80, 80, 1);
+}
+.register-page-mainframe {
+  display: flex;
+  padding: 18.75rem 46.875rem;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  border-color: transparent;
+  flex-direction: column;
+  background-color: rgba(255, 246, 246, 1);
+}
+.register-page-group1 {
+  width: 52rem;
+  height: 34rem;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.register-page-input-username {
+  top: 0px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 25rem;
+  display: flex;
+  padding: 0.75rem 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 1.875rem;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+}
+.register-page-input-name {
+  top: 400px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 25rem;
+  display: flex;
+  padding: 12px 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+}
+.register-page-input-surname {
+  top: 400px;
+  left: 600px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 25rem;
+  display: flex;
+  padding: 12px 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+}
+.register-page-input-email {
+  top: 100px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 25rem;
+  display: flex;
+  padding: 12px 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+}
+.register-page-input-password-confirm {
+  top: 300px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 25rem;
+  display: flex;
+  padding: 12px 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+}
+.register-page-input-password {
+  top: 200px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.25999999046325684);
+  width: 25rem;
+  display: flex;
+  padding: 12px 10px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 30px;
+  text-align: left;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+}
+.register-page-button-register {
+  top: 500px;
+  left: 0px;
+  width: 25rem;
+  display: flex;
+  padding: 7px 69px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  border-color: transparent;
+  border-radius: 50px;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1);
+}
+.register-page-text04 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: Montagu Slab;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.register-page-input-user {
+  top: 0px;
+  left: 600px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 60px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.register-page-input-author {
+  top: 105px;
+  left: 600px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 60px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.register-page-text06 {
+  top: 13px;
+  left: 680px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.register-page-text08 {
+  top: 118px;
+  left: 680px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}

@@ -1,0 +1,432 @@
+.frame1-frame1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+}
+.frame1-user-profile {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, 1);
+}
+.frame1-user-profile-header {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  display: flex;
+  padding: 21px 25px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(189, 80, 80, 1);
+}
+.frame1-group5 {
+  width: 1228px;
+  height: 95px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.frame1-logo {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 94px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.frame1-ellipse1 {
+  top: 0px;
+  left: 0px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-logo1 {
+  top: 14.338982582092285px;
+  left: 12.148760795593262px;
+  width: 74px;
+  height: 65px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-search-frame {
+  top: 8px;
+  left: 350px;
+  width: 731px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.frame1-text {
+  top: 12px;
+  left: 81px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.frame1-radixiconsmagnifyingglass {
+  top: 14px;
+  left: 25px;
+  width: 44px;
+  height: 42px;
+  position: absolute;
+}
+.frame1-home-btn {
+  top: 12px;
+  left: 128px;
+  width: 173px;
+  height: 71px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 50px;
+  background-color: rgba(255, 246, 246, 1);
+}
+.frame1-text02 {
+  top: 13px;
+  left: 31px;
+  color: rgba(0, 0, 0, 0.3499999940395355);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.frame1-mdiusercircleoutlineheader {
+  top: 1px;
+  left: 1130px;
+  width: 98px;
+  height: 94px;
+  position: absolute;
+}
+.frame1-user-profile-frame1 {
+  top: 133px;
+  left: 0px;
+  width: 100vw;
+  height: 893px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(189, 80, 80, 1);
+}
+.frame1-user-profile-frame2 {
+  top: 69px;
+  left: 66px;
+  width: 1800px;
+  height: 824px;
+  display: flex;
+  padding: 42px 48px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 246, 246, 1);
+}
+.frame1-group6 {
+  width: 1246px;
+  height: 696.1455078125px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.frame1-group4 {
+  top: 0px;
+  left: 0px;
+  width: 215px;
+  height: 336px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.frame1-image1 {
+  top: 0px;
+  left: 7px;
+  width: 200px;
+  height: 270px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-text04 {
+  top: 289px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-bio-frame {
+  top: 0px;
+  left: 261px;
+  height: 696px;
+  display: flex;
+  padding: 30px 42px 7px 42px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  flex-direction: column;
+}
+.frame1-text06 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 53px;
+  text-decoration: none;
+}
+.frame1-text08 {
+  color: rgba(0, 0, 0, 1);
+  width: 385px;
+  height: auto;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.frame1-text09 {
+  text-decoration: NONE;
+}
+.frame1-text10 {
+  text-decoration: UNDERLINE;
+}
+.frame1-books-frame {
+  top: 0px;
+  left: 777px;
+  display: flex;
+  padding: 30px 29px 0 29px;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  justify-content: center;
+}
+.frame1-group3 {
+  width: 411px;
+  height: 666.1455078125px;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.frame1-text12 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame1-group2 {
+  top: 99px;
+  left: 36px;
+  width: 339px;
+  height: 567.1455078125px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.frame1-image3 {
+  top: 0px;
+  left: 239px;
+  width: 100px;
+  height: 155px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-image2 {
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 154px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-image5 {
+  top: 211px;
+  left: 239px;
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-image6 {
+  top: 417px;
+  left: 0px;
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-image4 {
+  top: 211px;
+  left: 0px;
+  width: 100px;
+  height: 152px;
+  position: absolute;
+  border-color: transparent;
+}
+.frame1-image7 {
+  top: 414px;
+  left: 239px;
+  width: 100px;
+  height: 153px;
+  position: absolute;
+  border-color: transparent;
+}
