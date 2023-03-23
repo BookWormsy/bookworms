@@ -81,6 +81,21 @@
   border-radius: 50px;
   background-color: rgba(255, 246, 246, 1);
 }
+.group1-button-make-adjustments {
+  top: 200px;
+  left: 1029px;
+  width: 255px;
+  height: 68px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
 .desktop2-text {
   top: 12px;
   left: 81px;
@@ -465,6 +480,24 @@
   border-color: transparent;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 1);
+}
+.group1-text10 {
+  top: 11px;
+  left: 20px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  align-self: auto;
+  font-style: Regular;
+  text-align: center;
+  font-family: IM FELL French Canon;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
 }
 .desktop2-text27 {
   top: 18px;
