@@ -64,7 +64,7 @@ a:hover {
 }
 
 #profile-icon {
-  width: 4rem;
+  width: 4rem !important;
 }
 
 .tekst {
