@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%));
+  font-family: "Quicksand", sans-serif !important;
 }
 
 .naslovHeader {
@@ -66,8 +67,7 @@ a:hover {
   width: 4rem;
 }
 
-.tekst
-{
+.tekst {
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
 }
