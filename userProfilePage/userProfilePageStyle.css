@@ -202,8 +202,8 @@ p {
 }
 
 .enter {
-  height: 2.5rem;
-  width: 7rem;
+  height: 2.8rem;
+  width: 7.5rem;
   border-radius: 5px;
   border: 2px solid #000;
   cursor: pointer;
@@ -243,4 +243,8 @@ a:visited#reg-link {
 
 a {
   text-decoration: none !important;
+}
+
+.dugmad {
+  gap: 0.5rem;
 }
