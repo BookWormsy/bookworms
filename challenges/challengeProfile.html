@@ -50,19 +50,28 @@
               class="search-click"
               name="search-click"
               placeholder="search here..."
+              id="myInput"
             />
           </div>
-
-          <div class="naslovHeader justify-content-center col-sm-4">
+          <script>
+            var input= document.getElementById("myInput");
+            input.addEventListener("keypress", function(event){
+              if (event.key=="Enter") {
+                event.preventDefault();
+                window.location.href='../search result/searchResult.html';
+              }
+            })
+          </script>
+          <div class="naslovHeader text-center col-sm-4">
             <a class="navbar-brand" href="header.html">
               <small><i class="bi bi-book"></i></small>
               <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
             </a>
-            <a href="homePage.html" class="link-naslovHeader">bookworms</a>
+            <a href="../home page/homePage.html" class="link-naslovHeader">bookworms</a>
           </div>
 
           <div class="col-sm-4 d-flex justify-content-end">
-            <a href="reviewerProfilePage.html">
+            <a href="../reviewerProfilePage/reviewerProfilePage.html">
               <img
                 id="profile-icon"
                 src="../images/reviewerProfilePic.png"
@@ -85,7 +94,7 @@
                 to you wish list and make sure to send them to the read shelf before the end of the month!
             </p>
             <p class="tekst">Good luck adventurer.</p>
-            <a href="challengeProfile.html" class="btn btn-outline-danger">Entry Button</a>
+            <a href="challengeListPage.html" class="btn btn-outline-danger">Entry Button</a>
         </div>
         <div class="col-sm-4">
             <div class="card">

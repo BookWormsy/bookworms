@@ -26,9 +26,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(function () {
-        $("#header").load("../header/header.html");
-      });
+      //$(function () {
+      //  $("#header").load("../header/header.html");
+     // });
     </script>
     <link rel="icon" href="../images/logo.png" />
     <title>bookworms</title>
@@ -36,7 +36,49 @@
     <link rel="stylesheet" href="adminPage.css" />
   </head>
   <body>
-    <div id="header"></div>
+    <div class="row mb-sm-5">
+        <nav
+          class="navbar navbar-expand-sm navbar-light col-sm-12"
+          style="background-color: rgba(189, 80, 80, 1)"
+        >
+          <div class="container-fluid justify-content-center col-sm-12">
+            <div class="col-sm-4">
+              <input
+                type="text"
+                class="search-click"
+                name="search-click"
+                placeholder="search here..."
+                id="myInput"
+              />
+            </div>
+            <script>
+              var input= document.getElementById("myInput");
+              input.addEventListener("keypress", function(event){
+                if (event.key=="Enter") {
+                  event.preventDefault();
+                  window.location.href='../search result/searchResult.html';
+                }
+              })
+            </script>
+            <div class="naslovHeader text-center col-sm-4">
+              <a class="navbar-brand" href="header.html">
+                <small><i class="bi bi-book"></i></small>
+                <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
+              </a>
+              <a href="../home page/homePage.html" class="link-naslovHeader">bookworms</a>
+            </div>
+  
+            <div class="col-sm-4 d-flex justify-content-end">
+              <a href="../reviewerProfilePage/reviewerProfilePage.html">
+                <img
+                  id="profile-icon"
+                  src="../images/reviewerProfilePic.png"
+                  alt=""
+                />
+              </a>
+            </div>
+        </nav>
+      </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-6">

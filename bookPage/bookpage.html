@@ -29,15 +29,57 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(function () {
-        $("#header").load("../header/header.html");
-      });
+      //$(function () {
+       // $("#header").load("../header/header.html");
+      //});
     </script>
 
     <title>bookworms</title>
   </head>
   <body>
-    <div id="header">
+    <div class="row mb-sm-5">
+      <nav
+        class="navbar navbar-expand-sm navbar-light col-sm-12"
+        style="background-color: rgba(189, 80, 80, 1)"
+      >
+        <div class="container-fluid justify-content-center col-sm-12">
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="search-click"
+              name="search-click"
+              placeholder="search here..."
+              id="myInput"
+            />
+          </div>
+          <script>
+            var input= document.getElementById("myInput");
+            input.addEventListener("keypress", function(event){
+              if (event.key=="Enter") {
+                event.preventDefault();
+                window.location.href='../search result/searchResult.html';
+              }
+            })
+          </script>
+          <div class="naslovHeader text-center col-sm-4">
+            <a class="navbar-brand" href="header.html">
+              <small><i class="bi bi-book"></i></small>
+              <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
+            </a>
+            <a href="../home page/homePage.html" class="link-naslovHeader">bookworms</a>
+          </div>
+
+          <div class="col-sm-4 d-flex justify-content-end">
+            <a href="../reviewerProfilePage/reviewerProfilePage.html">
+              <img
+                id="profile-icon"
+                src="../images/reviewerProfilePic.png"
+                alt=""
+              />
+            </a>
+          </div>
+      </nav>
+    </div>
     </div>
 
     <div class="col-sm-12 d-flex justify-content-around">
@@ -166,7 +208,7 @@
         <div class="row col-sm-8 text-center">
           <div class="p-3 boks r">
             <h1 class="fw-bold">The fault in our stars</h2>
-            <h3>By John Green</h3>
+            <h3>By <a href="../authorProfilePage/authorProfilePage.html" style="color: black  !important;">John Green </a> </h3>
           </div>
         </div>
         <div class="col-sm-6">
@@ -191,7 +233,7 @@
             <div class="card-body">
               <div class="task" >
                 <div class="tags">
-                  <span class="tag">user12</span>
+                  <span class="tag"> <a href="../reviewerProfilePage/reviewerProfilePage.html">reviewer123 </a> </span>
                   <button class="options">
                     <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
                   </button>
@@ -207,7 +249,7 @@
               </div>
               <div class="task" >
                 <div class="tags">
-                  <span class="tag">user12</span>
+                  <span class="tag"><a href="../reviewerProfilePage/reviewerProfilePage.html">reviewer123 </a></span>
                   <button class="options">
                     <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
                   </button>
@@ -223,7 +265,7 @@
               </div>
               <div class="task" >
                 <div class="tags">
-                  <span class="tag">user12</span>
+                  <span class="tag"><a href="../reviewerProfilePage/reviewerProfilePage.html">reviewer123 </a></span>
                   <button class="options">
                     <svg xml:space="preserve" viewBox="0 0 41.915 41.916" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#000000"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M11.214,20.956c0,3.091-2.509,5.589-5.607,5.589C2.51,26.544,0,24.046,0,20.956c0-3.082,2.511-5.585,5.607-5.585 C8.705,15.371,11.214,17.874,11.214,20.956z"></path> <path d="M26.564,20.956c0,3.091-2.509,5.589-5.606,5.589c-3.097,0-5.607-2.498-5.607-5.589c0-3.082,2.511-5.585,5.607-5.585 C24.056,15.371,26.564,17.874,26.564,20.956z"></path> <path d="M41.915,20.956c0,3.091-2.509,5.589-5.607,5.589c-3.097,0-5.606-2.498-5.606-5.589c0-3.082,2.511-5.585,5.606-5.585 C39.406,15.371,41.915,17.874,41.915,20.956z"></path> </g> </g> </g></svg>
                   </button>

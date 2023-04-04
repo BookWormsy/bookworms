@@ -38,9 +38,18 @@
               class="search-click"
               name="search-click"
               placeholder="search here..."
+              id="myInput"
             />
           </div>
-
+          <script>
+            var input= document.getElementById("myInput");
+            input.addEventListener("keypress", function(event){
+              if (event.key=="Enter") {
+                event.preventDefault();
+                window.location.href='../search result/searchResult.html';
+              }
+            })
+          </script>
           <div class="naslovHeader text-center col-sm-4">
             <a class="navbar-brand" href="header.html">
               <small><i class="bi bi-book"></i></small>
@@ -50,7 +59,7 @@
           </div>
 
           <div class="col-sm-4 d-flex justify-content-end">
-            <a href="reviewerProfilePage.html">
+            <a href="../reviewerProfilePage/reviewerProfilePage.html">
               <img
                 id="profile-icon"
                 src="../images/reviewerProfilePic.png"
