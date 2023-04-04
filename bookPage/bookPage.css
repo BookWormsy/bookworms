@@ -1,0 +1,476 @@
+body {
+  background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%));
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.box {
+  position: relative;
+  width: 14rem;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+.box::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  /* filter: blur(30px); */
+}
+
+.box:hover:before,
+.box:hover:after {
+  transform: skewX(0deg) scaleX(1.3);
+  /* background-image: url("../images/tfis.jpg"); */
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(315deg, #fff7e1, hsl(0, 59%, 56%));
+}
+
+.box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* .box span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.box span::before {
+  top: -40px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+} */
+
+.box span::after {
+  content: "1.4\2B50";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  animation-delay: -1s;
+}
+
+.box span:after {
+  bottom: 5px;
+  right: 5rem;
+  width: 48px;
+  height: 25px;
+  opacity: 1;
+}
+
+.box .content {
+  position: relative;
+  width: 10rem;
+  height: 15rem;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/theFault.jpg");
+  background-size: contain;
+}
+
+.box .content h2 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+label {
+  background-color: rgb(255, 255, 255);
+  display: flex !important;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.5rem 0.5rem 0.6rem 0;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: black;
+  margin-bottom: 1rem;
+  margin-left: 0 !important;
+  width: 16rem !important;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label svg {
+  fill: hsl(0deg 100% 50%);
+  stroke: hsl(0deg 100% 50%);
+  animation: heartButton 1s;
+}
+
+input#read:checked + label svg {
+  fill: hsl(0, 3%, 6%);
+  stroke: hsl(0, 0%, 2%);
+  animation: heartButton 1s;
+}
+
+input#recommend:checked + label svg {
+  fill: hsl(60, 60%, 27%);
+  stroke: hsl(47, 91%, 36%);
+  animation: heartButton 1s;
+}
+@keyframes heartButton {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.3);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+input + label .action {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+}
+
+input + label .action span {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  transition: all 0.5s;
+}
+
+input + label .action span.option-1 {
+  transform: translate(0px, 0%);
+  opacity: 1;
+}
+
+input:checked + label .action span.option-1 {
+  transform: translate(0px, -100%);
+  opacity: 0;
+}
+
+input + label .action span.option-2 {
+  transform: translate(0px, 100%);
+  opacity: 0;
+}
+
+input:checked + label .action span.option-2 {
+  transform: translate(0px, 0%);
+  opacity: 1;
+}
+
+.card {
+  margin-top: 1rem;
+  width: 45rem;
+  height: 15rem;
+  background: transparent !important;
+  border-radius: 1rem !important;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.shadow {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.boks {
+  border-radius: 2rem;
+}
+
+.card-header {
+  border-top-right-radius: 1rem !important;
+  border-top-left-radius: 1rem !important;
+
+  border-bottom: none !important;
+  /* background: linear-gradient(315deg, #f9f8f6, hsl(0, 69%, 91%)); */
+  /* background: transparent; */
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+  margin-right: 8rem;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked + svg,
+.rating label:has(input:checked) ~ label svg {
+  transition: 0s;
+  /* Hopefully firefox gets :has support soon w/o feature flag */
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+.label2 {
+  background-color: transparent;
+  display: flex !important;
+  align-items: normal;
+  gap: 0;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: black;
+  margin-bottom: 1rem;
+  margin-left: 0 !important;
+  width: 2.3rem !important;
+}
+
+.rating span {
+  padding-top: 0.5rem;
+  width: 7rem;
+}
+
+.task {
+  position: relative;
+  color: #2e2e2f;
+  cursor: move;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  margin-bottom: 1rem;
+  border: 3px dashed transparent;
+
+  /* max-width: ; */
+}
+
+.task:hover {
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  border-color: rgba(162, 179, 207, 0.2) !important;
+}
+
+.task p {
+  font-size: 15px;
+  margin: 1.2rem 0;
+}
+
+.tag {
+  border-radius: 100px;
+  padding: 4px 13px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #1389eb;
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options {
+  background: transparent;
+  border: 0;
+  color: #c4cad3;
+  font-size: 17px;
+}
+
+.options svg {
+  fill: #9fa4aa;
+  width: 20px;
+}
+
+.stats {
+  position: relative;
+  width: 100%;
+  color: #9fa4aa;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats div {
+  margin-right: 1rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.stats svg {
+  margin-right: 5px;
+  height: 100%;
+  stroke: #9fa4aa;
+}
+
+.viewer span {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(28, 117, 219);
+  margin-right: -10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 2px;
+}
+
+.viewer span svg {
+  stroke: #fff;
+}
+
+.reviews {
+  height: 25rem;
+}
+
+.card-body {
+  height: 25rem;
+  overflow-x: hidden;
+}
