@@ -245,3 +245,7 @@ a:visited#reg-link {
 a {
   text-decoration: none !important;
 }
+
+#ime {
+  font-size: 3rem;
+}

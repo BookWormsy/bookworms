@@ -12,7 +12,7 @@ body {
 }
 
 a.link-naslovHeader {
-  color: antiquewhite;
+  color: antiquewhite !important;
   text-decoration: none;
 }
 
