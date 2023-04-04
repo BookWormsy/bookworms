@@ -1,5 +1,7 @@
 body {
-  background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%));
+  /* background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%)); */
+  background: hsl(0, 78%, 96%);
+
   font-family: "Quicksand", sans-serif !important;
 }
 
