@@ -1,0 +1,131 @@
+    body {
+        background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%));
+    }
+   
+  .container-signup {
+    font-family: "Quicksand", sans-serif;
+    margin-top: 2rem;
+  }
+  
+  .singup {
+    color: #000;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    width: 500px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%));
+    /* box-shadow: 16px 16px 32px #c8c8c8,
+            -16px -16px 32px #fefefe; */
+    border-radius: 8px;
+  }
+  
+  .inputBox,
+  .inputBox1 {
+    position: relative;
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  
+  .inputBox input,
+  .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .inputBox span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span,
+  .inputBox textarea:valid ~ span,
+  .inputBox textarea:focus ~ span{
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  
+  .inputBox input:valid,
+  .inputBox input:focus,
+  .inputBox textarea:valid,
+  .inputBox textarea:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
+  .enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 1rem 0 3em 0;
+  }
+  
+  .enter:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .card {
+    gap: 0.5rem;
+  }
+  
+  .card.options {
+    min-height: 0rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    width: 7rem;
+    border: none;
+  }
+  
+  .btn-link {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
