@@ -211,7 +211,7 @@ p {
   transition: 0.5s;
   font-size: 0.8rem;
   letter-spacing: 2px;
-  margin: 1rem 0 3em 0;
+  margin: 1rem 0 2em 0;
 }
 
 .enter:hover {
@@ -257,4 +257,8 @@ a {
 .badges img {
   width: 2.5rem;
   padding-top: 0.5rem;
+}
+
+.logoutBtn {
+  margin-top: 0;
 }
