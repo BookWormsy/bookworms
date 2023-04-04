@@ -1,0 +1,21 @@
+.btn-card{
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 1rem 0 3em 0;
+ }
+ 
+ .btn-card:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  h5{
+    
+  }
