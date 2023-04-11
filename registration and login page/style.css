@@ -12,6 +12,13 @@
   margin-top: 1rem;
 }
 
+.link-ka-reg
+{
+  color: antiquewhite;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 0.5rem;
+}
+
 a:active.link-naslov,
 a:visited.link-naslov {
   text-decoration: none;
