@@ -52,6 +52,44 @@ a {
   font-size: 3.5rem;
 }
 
+.button-name {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(189, 80, 80, 1);
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: antiquewhite;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+ }
+ 
+ .button-name:hover {
+  transform: translateY(-2px);
+  transform: scaleX(1.2) scaleY(1.2);
+ }
+ 
+ .button-name:active {
+  transform: translateY(2px);
+  transform: scaleX(1.2) scaleY(1.2);
+ }
+
 .container-signup {
   font-family: "Quicksand", sans-serif;
   margin-top: 4rem;
