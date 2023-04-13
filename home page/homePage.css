@@ -131,3 +131,21 @@ a:hover {
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
+.challenge-btn{
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-left: 31.25rem;
+}
+
+.challenge-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
