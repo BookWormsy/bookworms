@@ -1,129 +1,133 @@
-.img-card{
-   width: 102px;
-   height:158.33px;
-   align-self: center;
+.img-card {
+  width: 102px;
+  height: 158.33px;
+  align-self: center;
 }
 
-.see-book{
-   height: 45px;
-   width: 100px;
-   border-radius: 5px;
-   border: 2px solid #000;
-   cursor: pointer;
-   background-color: transparent;
-   transition: 0.5s;
-   font-size: 10px;
-   letter-spacing: 2px;
-   margin: 1rem 0 3em 0;
+.see-book {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 1rem 0 3em 0;
 }
 
 body {
-   /* background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%)); */
-   background: hsl(0, 78%, 96%);
- 
-   font-family: "Quicksand", sans-serif !important;
- }
- 
- .naslovHeader {
-   color: antiquewhite;
-   font-family: "Quicksand", sans-serif;
-   font-size: 3rem;
- }
- 
- a.link-naslovHeader {
-   color: antiquewhite;
-   text-decoration: none;
- }
- 
- a:hover {
-   text-decoration: none;
-   color: rgb(231, 212, 188);
- }
- 
- .bi-book {
-   margin-left: 0.75rem;
-   color: antiquewhite;
-   font-size: 3rem;
- }
- 
- .search-click {
-   /* border: 1px solid #ccc; */
-   border: none;
-   outline: none;
-   background-size: 50px;
-   background-position: 8px;
-   background-image: url("../images/search-icon-white.png");
-   /* content: url("../images/search-icon-white.png"); */
-   background-color: rgba(189, 80, 80, 1);
-   background-repeat: no-repeat;
-   border-radius: 10px;
-   width: 50px;
-   height: 50px;
-   padding: 25px;
-   transition: all 0.5s;
-   display: block;
- }
- .search-click:focus {
-   width: 300px;
-   padding-left: 60px;
-   background-color: rgb(167, 58, 58);
- }
- .search-click {
-   position: relative;
-   overflow: hidden;
-   height: 2rem;
- }
- .search-click input {
-   background: transparent;
-   /* border: 1px solid #ccc; */
-   outline: none;
-   position: absolute;
-   width: 300px;
-   height: 50px;
-   left: 0%;
-   padding: 10px;
- }
- 
- #profile-icon {
-   width: 4rem !important;
- }
- 
- .tekst {
-   font-family: "Quicksand", sans-serif;
-   font-size: 1rem;
- }
- 
+  /* background: linear-gradient(315deg, #f9f8f6, hsl(0, 56%, 90%)); */
+  background: hsl(0, 78%, 96%);
+
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.naslovHeader {
+  color: antiquewhite;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+}
+
+a.link-naslovHeader {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(231, 212, 188);
+}
+
+.bi-book {
+  margin-left: 0.75rem;
+  color: antiquewhite;
+  font-size: 3rem;
+}
+
+.search-click {
+  /* border: 1px solid #ccc; */
+  border: none;
+  outline: none;
+  background-size: 50px;
+  background-position: 8px;
+  background-image: url("../images/search-icon-white.png");
+  /* content: url("../images/search-icon-white.png"); */
+  background-color: rgba(189, 80, 80, 1);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  transition: all 0.5s;
+  display: block;
+}
+.search-click:focus {
+  width: 300px;
+  padding-left: 60px;
+  background-color: rgb(167, 58, 58);
+}
+.search-click {
+  position: relative;
+  overflow: hidden;
+  height: 2rem;
+}
+.search-click input {
+  background: transparent;
+  /* border: 1px solid #ccc; */
+  outline: none;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 0%;
+  padding: 10px;
+}
+
+#profile-icon {
+  width: 4rem !important;
+}
+
+#profile-icon-a:hover {
+  height: 4.2rem !important;
+}
+
+.tekst {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
 
 .see-book:hover {
-   background-color: rgb(0, 0, 0);
-   color: white;
- }
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
 
- .carousel-control-prev-icon, .carousel-control-next-icon{
-   height: 100px;
-   width: 100px;
-   outline: rgba(0, 0, 0, 0.1);
-   background-color: rgba(0, 0, 0, 0.1);
-   background-size: 100%, 100%;
-   border-radius: 50%;
-   border: 1px solid rgba(0, 0, 0, 0.1);
-   align-self: center;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-self: center;
 }
 
 .enter {
-   height: 45px;
-   width: 100px;
-   border-radius: 5px;
-   border: 2px solid #000;
-   cursor: pointer;
-   background-color: transparent;
-   transition: 0.5s;
-   font-size: 10px;
-   letter-spacing: 2px;
-   margin: 1rem 0 3em 0;
-   }
-   
-   .enter:hover {
-   background-color: rgb(0, 0, 0);
-   color: white;
-   }
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 1rem 0 3em 0;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
