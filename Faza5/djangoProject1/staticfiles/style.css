@@ -1,0 +1,249 @@
+.naslov-intro {
+  color: antiquewhite;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  padding-top: 45vh;
+}
+
+.naslov-login {
+  color: antiquewhite;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+ul.messages .error {
+    color: red;
+    font-weight: bold;
+}
+
+.link-ka-reg
+{
+  color: antiquewhite;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 0.5rem;
+}
+
+a:active.link-naslov,
+a:visited.link-naslov {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+a:hover.link-naslov {
+  text-decoration: none;
+  color: rgb(231, 212, 188);
+}
+
+a.link-naslov {
+  text-decoration: none;
+}
+
+a:active,
+a:visited {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(231, 212, 188);
+}
+
+a:active#reg-link,
+a:visited#reg-link {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bi-book {
+  color: antiquewhite;
+  font-size: 3.5rem;
+}
+
+.button-name {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(189, 80, 80, 1);
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: antiquewhite;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+ }
+ 
+ .button-name:hover {
+  transform: translateY(-2px);
+  transform: scaleX(1.2) scaleY(1.2);
+ }
+ 
+ .button-name:active {
+  transform: translateY(2px);
+  transform: scaleX(1.2) scaleY(1.2);
+ }
+
+.container-signup {
+  font-family: "Quicksand", sans-serif;
+  margin-top: 4rem;
+}
+
+.singup {
+  color: #000;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  width: 300px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: antiquewhite;
+  /* box-shadow: 16px 16px 32px #c8c8c8,
+          -16px -16px 32px #fefefe; */
+  border-radius: 8px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox1 input:valid ~ span,
+.inputBox1 input:focus ~ span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox1 input:valid,
+.inputBox1 input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin: 1rem 0 3em 0;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.card {
+  gap: 1rem;
+}
+
+.card.options {
+  min-height: 0rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  width: 7rem;
+  border: none;
+}
+
+.btn-link {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #8d8484;
+}
+.btn-link.focus,
+.btn-link:focus {
+  text-decoration: underline;
+  font-weight: 1000;
+}
+.btn-link:visited {
+  text-decoration: none;
+}
