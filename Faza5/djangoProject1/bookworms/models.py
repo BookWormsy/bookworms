@@ -88,6 +88,7 @@ class Author(models.Model):
 class Book(models.Model):
     idBook = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=45)
+    genre = models.CharField(max_length=60)
     description = models.TextField()
     coverImage = models.ImageField(upload_to='images/', default='images/userProfile.svg')
     class Meta:

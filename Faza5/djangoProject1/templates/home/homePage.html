@@ -107,28 +107,22 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/romance1.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Fault In Our Starts</h4>
-                                                <p class="card-text">John Green</p>
-                                                <a href="../bookPage/bookPage.html"><button class="see-book">See book</button></a>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/romance2.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Hating Game</h4>
-                                                <p class="card-text">Sally Thorne</p>
-                                                <button class="see-book">See book</button>
+                                    {% for book in romanceBooks %}
+                                         <div class="col-md-4 mb-3">
+                                            <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
+                                                <img class="img-card" alt="100%x280" src={{book.coverImage}}>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">{{ book.title}} </h4>
+                                                    <p class="card-text">
+                                                        {%  for author_wrote_book in book.authorwrotebook_set.all %}
+                                                            {{ author_wrote_book.idAuthor.name}} {{ author_wrote_book.idAuthor.surname}}
+                                                            {% endfor %}
+                                                        </p>
+                                                    <a href="../bookPage/bookPage.html"><button class="see-book">See book</button></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                     {% endfor %}
                                     <div class="col-md-4 mb-3">
                                         <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
                                             <img class="img-card" alt="100%x280" src="../images/romance3.jpg">

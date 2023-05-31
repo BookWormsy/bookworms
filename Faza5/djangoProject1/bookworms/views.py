@@ -3,7 +3,7 @@ from django.contrib.auth import login, authenticate
 
 # Create your views here.
 from django.shortcuts import render, redirect
-from .models import AuthorShow
+from .models import AuthorShow, Book, AuthorWroteBook
 from .forms import UserForm, UserDetailForm, AuthorForm, AuthorDetailForm, LoginForm
 
 
@@ -47,7 +47,6 @@ def register(request):
         'author_detail_form': author_detail_form
     })
 
-
 def login_view(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -66,4 +65,8 @@ def login_view(request):
     return render(request, 'login/login.html', {'form': form})
 
 def home(request):
-    return render(request, 'home/homePage.html')
+    romanceBooks = Book.objects.all().filter(genre="romance");
+    return render(request, 'home/homePage.html', {'romanceBooks' : romanceBooks})
+
+def intro(request):
+    return render(request, 'intro/intro.html')
