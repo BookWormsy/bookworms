@@ -144,7 +144,8 @@
                                         {% endif %}
                                     </div>
                                 {% endfor %}
-                                {% for field in author_detail_form %}
+                                {{ author_detail_form.as_p }}
+                                {% for field in request_form %}
                                     <div class="inputBox1">
                                         {{ field.label_tag }}
                                         {{ field }}

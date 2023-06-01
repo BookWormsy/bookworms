@@ -118,6 +118,7 @@ class AuthorWroteBook(models.Model):
     idBook = models.ForeignKey(Book, on_delete=models.CASCADE, db_column='idBook')
     class Meta:
         db_table = 'AuthorWroteBook'
+
 class Reviews(models.Model):
     idReview = models.AutoField(primary_key=True)
     reviewText = models.TextField()
@@ -171,5 +172,7 @@ class Administrator(models.Model):
 class Request(models.Model):
     idRequest = models.AutoField(primary_key=True)
     idUser = models.ForeignKey(User, on_delete=models.CASCADE, db_column='idUser')
+    name = models.CharField(max_length=45)
+    surname = models.CharField(max_length=45)
     class Meta:
         db_table = 'Request'

@@ -1,0 +1,12 @@
+[
+  {
+    "model": "bookworms.UsernamesPasswords",
+    "fields": {
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "abc123",
+      "is_superuser": true,
+      "is_staff": true
+    }
+  }
+]

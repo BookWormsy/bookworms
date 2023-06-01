@@ -1,0 +1,130 @@
+[
+    {
+        "model": "auth.group",
+        "fields": {
+            "name": "user_ord"
+        }
+    },
+    {
+        "model": "auth.group",
+        "fields": {
+            "name": "reviewer"
+        }
+    },
+    {
+        "model": "auth.group",
+        "fields": {
+            "name": "author"
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 1,
+        "fields": {
+            "name": "Harper",
+            "surname": "Lee",
+            "bioShow": "Harper Lee is an American author, best known for her novel 'To Kill a Mockingbird'."
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 1,
+        "fields": {
+            "title": "To Kill a Mockingbird",
+            "genre": "Classic",
+            "description": "The description",
+            "coverImage": "/images/classic1.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 1,
+        "fields": {
+            "idAuthor": 1,
+            "idBook": 1
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 2,
+        "fields": {
+            "name": "John",
+            "surname": "Green",
+            "bioShow": "John Green is an American author, best known for his novel 'The Fault in Our Stars'."
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 2,
+        "fields": {
+            "title": "The Fault in Our Stars",
+            "genre": "Romance",
+            "description": "The",
+            "coverImage": "/images/romance1.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 2,
+        "fields": {
+            "idAuthor": 2,
+            "idBook": 2
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 3,
+        "fields": {
+            "name": "Jonathan",
+            "surname": "Haidt",
+            "bioShow": "Jonathan Haidt is an American social psychologist, best known for his book 'The Happiness Hypothesis'."
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 3,
+        "fields": {
+            "title": "The Happiness Hypothesis",
+            "genre": "Psychology",
+            "description": "The description",
+            "coverImage": "/images/psychology1.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 3,
+        "fields": {
+            "idAuthor": 3,
+            "idBook": 3
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 4,
+        "fields": {
+            "name": "Colleen",
+            "surname": "Hoover",
+            "bioShow": "Colleen Hoover is the #1 New York Times bestselling author of several novels, including 'Ugly Love'."
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 4,
+        "fields": {
+            "title": "Ugly Love",
+            "genre": "Romance",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/image/romance8.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 4,
+        "fields": {
+            "idAuthor": 4,
+            "idBook": 4
+        }
+    }
+
+]
+
