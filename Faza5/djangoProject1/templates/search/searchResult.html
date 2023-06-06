@@ -25,19 +25,20 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
+
     <script>
       //$(function () {
       //  $("#header").load("../header/header.html");
       //});
     </script>
-      <link href="css/bootstrap-icons.css" rel="stylesheet" />
+{#    <link href="css/bootstrap-icons.css" rel="stylesheet" />#}
 
-    <link rel="icon" href="../../staticfiles/img/logo.png" />
+    <link rel="icon" href="../images/logo.png" />
     <title>bookworms</title>
     <!-- ovde stil -->
-    <link rel="stylesheet" href="../../staticfiles/headerStyle.css">
+    <link rel="stylesheet" href="/static/headerStyle.css">
 
-    <link rel="stylesheet" href="../../staticfiles/searchResult.css" />
+    <link rel="stylesheet" href="/static/searchResult.css" />
 
   </head>
   <body>
@@ -48,29 +49,32 @@
       >
         <div class="container-fluid justify-content-center col-sm-12">
           <div class="col-sm-4">
-            <input
-              type="text"
-              class="search-click"
-              name="search-click"
-              placeholder="search here..."
-              id="myInput"
-            />
+              <form method="GET">
+                {% csrf_token %}
+                    <input
+                      type="text"
+                      class="search-click"
+                      placeholder="search here..."
+                      id="myInput"
+                      name="myInput"
+                    />
+              </form>
           </div>
           <script>
             var input= document.getElementById("myInput");
             input.addEventListener("keypress", function(event){
               if (event.key=="Enter") {
-                event.preventDefault();
-                window.location.href='../search result/searchResult.html';
+                window.location.href='/searchResult/'
               }
             })
           </script>
           <div class="naslovHeader text-center col-sm-4">
-            <a class="navbar-brand" href="header.html">
+
+            <a class="navbar-brand" href="/home/">
               <small><i class="bi bi-book"></i></small>
               <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
             </a>
-            <a href="../home page/homePage.html" class="link-naslovHeader">bookworms</a>
+            <a href="/home/" class="link-naslovHeader">bookworms</a>
           </div>
 
           <div class="col-sm-4 d-flex justify-content-end">
@@ -82,141 +86,48 @@
               />
             </a>
           </div>
+        </div>
       </nav>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="checkbox-wrapper-33">
-                    <label class="checkbox">
-                      <input type="checkbox" class="checkbox__trigger visuallyhidden">
-                      <span class="checkbox__symbol">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px" class="icon-checkbox" aria-hidden="true">
-                          <path d="M4 14l8 7L24 7"></path>
-                        </svg>
-                      </span>
-                      <p class="checkbox__textwrapper">Book</p>
-                    </label>
-                  </div>
-                  <div class="checkbox-wrapper-33">
-                    <label class="checkbox">
-                      <input type="checkbox" class="checkbox__trigger visuallyhidden" checked>
-                      <span class="checkbox__symbol">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px" class="icon-checkbox" aria-hidden="true">
-                          <path d="M4 14l8 7L24 7"></path>
-                        </svg>
-                      </span>
-                      <p class="checkbox__textwrapper">Author</p>
-                    </label>
-                  </div>
-                  <div class="checkbox-wrapper-33">
-                    <label class="checkbox">
-                      <input type="checkbox" class="checkbox__trigger visuallyhidden">
-                      <span class="checkbox__symbol">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px" class="icon-checkbox" aria-hidden="true">
-                          <path d="M4 14l8 7L24 7"></path>
-                        </svg>
-                      </span>
-                      <p class="checkbox__textwrapper">Reviewer</p>
-                    </label>
-                  </div>
-                  <div class="checkbox-wrapper-33">
-                    <label class="checkbox">
-                      <input type="checkbox" class="checkbox__trigger visuallyhidden">
-                      <span class="checkbox__symbol">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px" class="icon-checkbox" aria-hidden="true">
-                          <path d="M4 14l8 7L24 7"></path>
-                        </svg>
-                      </span>
-                      <p class="checkbox__textwrapper">Genre</p>
-                    </label>
-                  </div>
-                  <div class="checkbox-wrapper-33">
-                    <label class="checkbox">
-                      <input type="checkbox" class="checkbox__trigger visuallyhidden">
-                      <span class="checkbox__symbol">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 28 28" height="28px" width="28px" class="icon-checkbox" aria-hidden="true">
-                          <path d="M4 14l8 7L24 7"></path>
-                        </svg>
-                      </span>
-                      <p class="checkbox__textwrapper">Special words</p>
-                    </label>
-                  </div>
+            <div class="col-sm-3">
             </div>
             <div class="col-sm-8" style="padding-top: 40px;">
-                <div class="card shadow">
+                <h1>Search result for:<span>{{ searchInput }}</span></h1>
+
+                {% if books %}
+                    {% for book in books %}
+                        <div class="card shadow">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img class="img-card" src="../images/romance1.jpg" alt="...">
+                            <img class="img-card"
+                                 src="{{ book.image }}"
+                                 alt="{{ book.title }}">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body" style="padding-top: 50px;">
                                 <h5 class="card-title">
-                                    <a href="../bookPage/bookpage.html">The Fault In Our Stars </a>
+                                    <a href="/bookPage/{{ book.id }}">{{ book.title }} </a>
                                 </h5>
                                 <p class="card-text">
-                                    John Green
+                                     {{ book.authors }}
                                 </p>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
                 <br>
-                <div class="card shadow" style="max-width:700px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img class="img-card" src="../images/johngreen2.jpg" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body" style="padding-top: 50px;">
-                                <h5 class="card-title">
-                                    Looking For Alaska
-                                </h5>
-                                <p class="card-text">
-                                    John Green
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="card shadow" style="max-width:700px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img class="img-card" src="../images/johngreen3.jpg" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body" style="padding-top: 50px;">
-                                <h5 class="card-title">
-                                    Paper Towns
-                                </h5>
-                                <p class="card-text">
-                                    John Green
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="card shadow" style="max-width:700px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img class="img-card" src="../images/johngreen4.jpg" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body" style="padding-top: 50px;">
-                                <h5 class="card-title">
-                                    An Abundance of Katherines
-                                </h5>
-                                <p class="card-text">
-                                    John Green
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                    {% endfor %}
+                {% endif %}
+
+
             </div>
         </div>
     </div>
   </body>
+
 </html>
