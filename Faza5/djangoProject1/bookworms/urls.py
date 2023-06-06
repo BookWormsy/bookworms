@@ -12,5 +12,7 @@ urlpatterns = [
     path('searchResult/', search, name='search'),
 
     path('bookPage/<str:book_title>/', bookView, name='bookView'),
+    path('bookPage/<str:book_title>//reviews/create/', bookView, name='create_review'),
+
     # Other URL patterns
 ]

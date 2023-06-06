@@ -64,7 +64,7 @@
             var input= document.getElementById("myInput");
             input.addEventListener("keypress", function(event){
               if (event.key=="Enter") {
-                window.location.href='/searchResult/'
+                window.location.href='searchResult/'
               }
             })
           </script>
@@ -108,7 +108,7 @@
                         <div class="col-md-8">
                             <div class="card-body" style="padding-top: 50px;">
                                 <h5 class="card-title">
-                                    <a href="/bookPage/{{ book.id }}">{{ book.title }} </a>
+                                    <a href="/bookPage/{{ book.title }}">{{ book.title }} </a>
                                 </h5>
                                 <p class="card-text">
                                      {{ book.authors }}

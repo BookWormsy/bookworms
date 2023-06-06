@@ -90,7 +90,7 @@
       <div class="col-sm-4" style="padding-left: 4rem;">
         <div class="box">
           <div class="content" >
-              <img src="{{ book.image }}">
+              <img src="{{ book.coverImage }}">
                         <p>{{ book.rating }}<span style="font-size:150%;color:yellow;">&starf;</span> </p>
 
 
@@ -257,6 +257,7 @@
             </div>
           </div>
         </div>
+      {% if "reviewers" in user.groups.all %}
         <div class="col-sm-6">
           <div class="card shadow">
             <h3 class="card-header">Leave a review</h3>
@@ -267,15 +268,21 @@
                       style="background: #fff;"></textarea>
                   </div>
                 <div class="float-end mt-2 pt-1">
-                  <button type="button" class="enter">post</button>
-                  <button type="button" class="enter">cancel</button>
+
                 </div>
               </div>
               
-              <input type="textarea">
+              <form method="post">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  <button type="submit" class="enter">post</button>
+                  <button type="button" class="enter">cancel</button>
+
+                </form>
 
             </div>
           </div>
+      {% endif %}
         </div>
       </div>
     </div>

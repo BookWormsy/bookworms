@@ -86,7 +86,7 @@ class Author(models.Model):
         db_table = 'Author'
 
 class Book(models.Model):
-    idBook = models.IntegerField(primary_key=True)
+    idBook = models.AutoField(primary_key=True)
     title = models.CharField(max_length=45)
     genre = models.CharField(max_length=60)
     description = models.TextField()
