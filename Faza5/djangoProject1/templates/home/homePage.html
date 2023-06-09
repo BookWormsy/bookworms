@@ -1,384 +1,275 @@
+{% load book_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="css/bootstrap-icons.css" rel="stylesheet"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+            rel="stylesheet"
     />
     <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
     ></script>
     <script>
-      //$(function () {
-      //  $("#header").load("../header/header.html");
-      //});
+        //$(function () {
+        //  $("#header").load("../header/header.html");
+        //});
     </script>
-    <link rel="icon" href="../images/logo.png" />
+    <link rel="icon" href="../images/logo.png"/>
     <title>bookworms</title>
     <!-- ovde stil -->
-    <link rel="stylesheet" href="/static/homePage.css" />
+    <link rel="stylesheet" href="/static/homePage.css"/>
     <link rel="stylesheet" href="/static/headerStyle.css"/>
 
-  </head>
-  <body>
-    <div class="row mb-sm-5">
-        <nav
-          class="navbar navbar-expand-sm navbar-light col-sm-12"
-          style="background-color: rgba(189, 80, 80, 1);"
-        >
-          <div class="container-fluid justify-content-center col-sm-12"  style="position: relative; z-index: 1;">
+</head>
+<body>
+<div class="row mb-sm-5">
+    <nav
+            class="navbar navbar-expand-sm navbar-light col-sm-12"
+            style="background-color: rgba(189, 80, 80, 1);"
+    >
+        <div class="container-fluid justify-content-center col-sm-12" style="position: relative; z-index: 1;">
             <div class="col-sm-4">
-              <input
-                type="text"
-                class="search-click"
-                name="search-click"
-                placeholder="search here..."
-                id="myInput"
-              />
+                <form method="GET" id="myForm">
+                    {% csrf_token %}
+                    <input
+                            type="text"
+                            class="search-click"
+                            placeholder="search here..."
+                            id="myInput"
+                            name="myInput"
+                    />
+                </form>
             </div>
             <script>
-              var input= document.getElementById("myInput");
-              input.addEventListener("keypress", function(event){
-                if (event.key=="Enter") {
-                  event.preventDefault();
-                  window.location.href='../search result/searchResult.html';
-                }
-              })
+                var myForm = document.getElementById("myForm");
+                var input = document.getElementById("myInput");
+                myForm.addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent the default form submission behavior
+
+                    var searchWord = input.value.trim();
+                    if (searchWord !== "") {
+                        var url = "/searchResult/" + searchWord + "/";
+                        window.location = url;
+                    }
+                })
             </script>
             <div class="naslovHeader text-center col-sm-4">
-              <a class="navbar-brand" href="header.html">
-                <small><i class="bi bi-book"></i></small>
-                <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
-              </a>
-              <a href="/homePage.html" class="link-naslovHeader">bookworms</a>
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <small><i class="bi bi-book"></i></small>
+                    <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
+                </a>
+                <a href="{% url 'home' %}" class="link-naslovHeader">bookworms</a>
             </div>
-  
-           <div class="col-sm-4 d-flex justify-content-end" style="position: relative; z-index: 2;">
-              <a id="profile-icon-a" href="../reviewerProfilePage/reviewerProfilePage.html" >
 
-               {% comment %} {% if user.is_authenticated %}
-                  <img src="{{ user.profileImage }}" alt="{{ user.username }}'s profile picture" id="profile-icon">
-                {% else %}
-                  <p>No user is logged in.</p>
-                {% endif %}
-              {% endcomment %}
-                  <img src="/images/user.png" alt="No picture" id="profile-icon">
-              </a>
+            <div class="col-sm-4 d-flex justify-content-end" style="position: relative; z-index: 2;">
+                <a id="profile-icon-a" href="{% url 'user' des_user_id=request.user.idUser %}">
+                    <img src="/images/user.png" alt="No picture" id="profile-icon">
+                </a>
             </div>
-          </div>
-        </nav>
-      </div>
-    <section class="pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="alert" style="background-color: white; border-radius: 30px; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-                        <strong>Hey there!</strong> Are you ready for a challenge? Click the button to find out more.
+        </div>
+    </nav>
+</div>
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="alert"
+                     style="background-color: white; border-radius: 30px; box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                    <strong>Hey there!</strong> Are you ready for a challenge? Click the button to find out more.
 
-                        <a href="../challenges/challengeListPage.html"><button class="challenge-btn">See more</button> </a>
-                        
-                    </div>
+                    <a href="{% url 'challengeList' %}">
+                        <button class="challenge-btn">See more</button>
+                    </a>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="mb-3">Romance</h3>
-                </div>
-                <div class="col-12">
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-    
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">Romance</h3>
+            </div>
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        {% for books in romanceBooks|chunk_books:3 %}
+                            <div class="carousel-item{% if forloop.first %} active{% endif %}">
                                 <div class="row">
-                                    {% for book in romanceBooks %}
-                                         <div class="col-md-4 mb-3">
-                                            <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                                <img class="img-card" alt="100%x280" src={{book.coverImage}}>
+                                    {% for book in books %}
+                                        <div class="col-md-4 mb-3">
+                                            <div
+                                                    class="card text-center shadow"
+                                                    style="border-radius: 30px; height: 360px"
+                                            >
+                                                <img
+                                                        class="img-card"
+                                                        alt="100%x280"
+                                                        src={{ book.coverImage }}
+                                                />
                                                 <div class="card-body">
-                                                    <h4 class="card-title">{{ book.title}} </h4>
+                                                    <h4 class="card-title">{{ book.title }}</h4>
                                                     <p class="card-text">
-                                                        {%  for author_wrote_book in book.authorwrotebook_set.all %}
-                                                            {{ author_wrote_book.idAuthor.name}} {{ author_wrote_book.idAuthor.surname}}
-                                                            {% endfor %}
-                                                        </p>
-                                                    <a href="../bookPage/bookPage.html"><button class="see-book">See book</button></a>
+                                                        {% for author_wrote_book in book.authorwrotebook_set.all %}
+                                                            {{ author_wrote_book.idAuthor.name }}
+                                                            {{ author_wrote_book.idAuthor.surname }}
+                                                        {% endfor %}
+                                                    </p>
+                                                    <a href="{% url 'book' bookId=book.idBook %}"
+                                                    >
+                                                        <button class="see-book">See book</button>
+                                                    </a
+                                                    >
                                                 </div>
                                             </div>
                                         </div>
-                                     {% endfor %}
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/romance3.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">It Ends With Us</h4>
-                                                <p class="card-text">Colleen Hoover</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-    
+                                    {% endfor %}
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/romance6.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Spanish Love Deception</h4>
-                                                <p class="card-text">Elena Armas</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/romance7.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Duke and I</h4>
-                                                <p class="card-text">Julia Quinn</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/romance8.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Ugly Love</h4>
-                                                <p class="card-text">Colleen Hoover</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" id="prev-btn">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" id="next-btn">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+                        {% endfor %}
                     </div>
-                </div>
-            </div>
-            <!-- drugi niz -->
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="mb-3">The Classics</h3>
-                </div>
-                <div class="col-12">
-                    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
-    
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/classic1.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">To Kill A Mockingbird</h4>
-                                                <p class="card-text">Harper Lee</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/classic2.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Great Gatsby</h4>
-                                                <p class="card-text">F. Scott Fitzgerald</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/classic3.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Crime and Punishment</h4>
-                                                <p class="card-text">Fyodor Dostoyevsky</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/classic4.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Secret History</h4>
-                                                <p class="card-text">Donna Tart</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/classic5.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Pride and Prejudice</h4>
-                                                <p class="card-text">Jane Austin</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/classic6.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Brave New World</h4>
-                                                <p class="card-text">Aldous Huxley</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev" id="prev-btn">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next" id="next-btn">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- treci niz -->
 
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="mb-3">Psychology</h3>
-                </div>
-                <div class="col-12">
-                    <div id="demo3" class="carousel slide" data-bs-ride="carousel">
-    
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/psychology1.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The Happiness Hypothesis</h4>
-                                                <p class="card-text">Jonathan Haidy</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/psychology2.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Influence, The Psychology of Persuasion</h4>
-                                                <p class="card-text">Robert B. Cialdini</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/psychology3.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">The School of Life</h4>
-                                                <p class="card-text">Alain de Botton</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-    
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/psychology4.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Noise</h4>
-                                                <p class="card-text">Daniel Kaheman, Olivier Sibony, Cass R. Sunstein</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/psychology6.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Outliers, The Story of Success</h4>
-                                                <p class="card-text">Malcom Gladwell</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <div class="card text-center shadow" style="border-radius: 30px; height: 360px;">
-                                            <img class="img-card" alt="100%x280" src="../images/psychology5.jpg">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Thinking Fast and Slow</h4>
-                                                <p class="card-text">Daniel Kaheman</p>
-                                                <button class="see-book">See book</button>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            
-                    
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev" id="prev-btn">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next" id="next-btn">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"
+                            id="prev-btn">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"
+                            id="next-btn">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
             </div>
-            <!-- <div class="text-center">
-                <a href="../challenges/challengeListPage.html"><button class="enter">apply for challange</button> </a>
-            </div> -->
         </div>
+        <!-- drugi niz -->
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">The Classics</h3>
+            </div>
+            <div class="col-12">
+                <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for books in classicBooks|chunk_books:3 %}
+                            <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                                <div class="row">
+                                    {% for book in books %}
+                                        <div class="col-md-4 mb-3">
+                                            <div
+                                                    class="card text-center shadow"
+                                                    style="border-radius: 30px; height: 360px"
+                                            >
+                                                <img
+                                                        class="img-card"
+                                                        alt="100%x280"
+                                                        src={{ book.coverImage }}
+                                                />
+                                                <div class="card-body">
+                                                    <h4 class="card-title">{{ book.title }}</h4>
+                                                    <p class="card-text">
+                                                        {% for author_wrote_book in book.authorwrotebook_set.all %}
+                                                            {{ author_wrote_book.idAuthor.name }}
+                                                            {{ author_wrote_book.idAuthor.surname }}
+                                                        {% endfor %}
+                                                    </p>
+                                                    <a href="../bookPage/bookPage.html"
+                                                    >
+                                                        <button class="see-book">See book</button>
+                                                    </a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev"
+                            id="prev-btn">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next"
+                            id="next-btn">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
         </div>
-    </section>
-    
-  </body>
+        <!-- treci niz -->
+
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">Psychology</h3>
+            </div>
+            <div class="col-12">
+                <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for books in psychologyBooks|chunk_books:3 %}
+                            <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                                <div class="row">
+                                    {% for book in books %}
+                                        <div class="col-md-4 mb-3">
+                                            <div
+                                                    class="card text-center shadow"
+                                                    style="border-radius: 30px; height: 360px"
+                                            >
+                                                <img
+                                                        class="img-card"
+                                                        alt="100%x280"
+                                                        src={{ book.coverImage }}
+                                                />
+                                                <div class="card-body">
+                                                    <h4 class="card-title">{{ book.title }}</h4>
+                                                    <p class="card-text">
+                                                        {% for author_wrote_book in book.authorwrotebook_set.all %}
+                                                            {{ author_wrote_book.idAuthor.name }}
+                                                            {{ author_wrote_book.idAuthor.surname }}
+                                                        {% endfor %}
+                                                    </p>
+                                                    <a href="../bookPage/bookPage.html"
+                                                    >
+                                                        <button class="see-book">See book</button>
+                                                    </a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev"
+                            id="prev-btn">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next"
+                            id="next-btn">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+</body>
 </html>

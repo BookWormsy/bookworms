@@ -1,39 +1,43 @@
 [
     {
         "model": "auth.group",
+        "pk": 1,
         "fields": {
             "name": "user_ord"
         }
     },
     {
         "model": "auth.group",
+        "pk": 2,
         "fields": {
             "name": "reviewer"
         }
     },
     {
         "model": "auth.group",
+        "pk": 3,
         "fields": {
             "name": "author"
         }
     },
+
     {
         "model": "bookworms.authorshow",
         "pk": 1,
         "fields": {
-            "name": "Harper",
-            "surname": "Lee",
-            "bioShow": "Harper Lee is an American author, best known for her novel 'To Kill a Mockingbird'."
+            "name": "Jane",
+            "surname": "Austen",
+            "bioShow": "desc"
         }
     },
     {
         "model": "bookworms.book",
         "pk": 1,
         "fields": {
-            "title": "To Kill a Mockingbird",
+            "title": "Pride and Prejudice",
             "genre": "Classic",
-            "description": "The description",
-            "coverImage": "/images/classic1.jpg"
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/classic5.jpg"
         }
     },
     {
@@ -71,23 +75,24 @@
             "idBook": 2
         }
     },
+
     {
         "model": "bookworms.authorshow",
         "pk": 3,
         "fields": {
-            "name": "Jonathan",
-            "surname": "Haidt",
-            "bioShow": "Jonathan Haidt is an American social psychologist, best known for his book 'The Happiness Hypothesis'."
+            "name": "Aldous",
+            "surname": "Huxley",
+            "bioShow": "desc"
         }
     },
     {
         "model": "bookworms.book",
         "pk": 3,
         "fields": {
-            "title": "The Happiness Hypothesis",
-            "genre": "Psychology",
-            "description": "The description",
-            "coverImage": "/images/psychology1.jpg"
+            "title": "Brave New World",
+            "genre": "Classic",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/classic6.jpg"
         }
     },
     {
@@ -98,6 +103,7 @@
             "idBook": 3
         }
     },
+
     {
         "model": "bookworms.authorshow",
         "pk": 4,
@@ -114,7 +120,7 @@
             "title": "Ugly Love",
             "genre": "Romance",
             "description": "<Replace with the book description from a legitimate source>",
-            "coverImage": "/image/romance8.jpg"
+            "coverImage": "/images/romance8.jpg"
         }
     },
     {
@@ -124,7 +130,419 @@
             "idAuthor": 4,
             "idBook": 4
         }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 5,
+        "fields": {
+            "title": "It Ends With Us",
+            "genre": "Romance",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/romance3.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 5,
+        "fields": {
+            "idAuthor": 4,
+            "idBook": 5
+        }
+    },
+
+    {
+        "model": "bookworms.authorshow",
+        "pk": 5,
+        "fields": {
+            "name": "Julia",
+            "surname": "Quinn",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 6,
+        "fields": {
+            "title": "The Duke And I",
+            "genre": "Romance",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/romance5.jpeg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 6,
+        "fields": {
+            "idAuthor": 5,
+            "idBook": 6
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 6,
+        "fields": {
+            "name": "Sally",
+            "surname": "Thorne",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 7,
+        "fields": {
+            "title": "The Hating Game",
+            "genre": "Romance",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/romance6.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 7,
+        "fields": {
+            "idAuthor": 6,
+            "idBook": 7
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 7,
+        "fields": {
+            "name": "Jonathan",
+            "surname": "Haidt",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 8,
+        "fields": {
+            "title": "The Happiness Hypothesis",
+            "genre": "Psychology",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/psychology1.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 8,
+        "fields": {
+            "idAuthor": 7,
+            "idBook": 8
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 8,
+        "fields": {
+            "name": "Robert B.",
+            "surname": "Cialdini",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 9,
+        "fields": {
+            "title": "Influence, The Psychology of Persuasion",
+            "genre": "Psychology",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/psychology2.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 9,
+        "fields": {
+            "idAuthor": 8,
+            "idBook": 9
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 9,
+        "fields": {
+            "name": "Alain",
+            "surname": "de Botton",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 10,
+        "fields": {
+            "title": "The School of Life",
+            "genre": "Psychology",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/psychology3.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 10,
+        "fields": {
+            "idAuthor": 9,
+            "idBook": 10
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 10,
+        "fields": {
+            "name": "Daniel",
+            "surname": "Kahneman",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 11,
+        "fields": {
+            "name": "Olivier",
+            "surname": "Sibony",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 12,
+        "fields": {
+            "name": "Cass R.",
+            "surname": "Sunstein",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 11,
+        "fields": {
+            "title": "Noise",
+            "genre": "Psychology",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/psychology4.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 11,
+        "fields": {
+            "idAuthor":10,
+            "idBook": 11
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 12,
+        "fields": {
+            "idAuthor":11,
+            "idBook": 11
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 13,
+        "fields": {
+            "idAuthor":12,
+            "idBook": 11
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 12,
+        "fields": {
+            "title": "Thinking Fast and Slow",
+            "genre": "Psychology",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/psychology5.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 14,
+        "fields": {
+            "idAuthor": 10,
+            "idBook": 12
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 13,
+        "fields": {
+            "name": "Malcolm",
+            "surname": "Gladwell",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 13,
+        "fields": {
+            "title": "Outliers, The Story of Success",
+            "genre": "Psychology",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/psychology6.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 15,
+        "fields": {
+            "idAuthor": 13,
+            "idBook": 13
+        }
     }
 
+
+    ,
+    {
+        "model": "bookworms.authorshow",
+        "pk": 14,
+        "fields": {
+            "name": "Harper",
+            "surname": "Lee",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 14,
+        "fields": {
+            "title": "To Kill a Mockingbird",
+            "genre": "Classic",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/classic1.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 16,
+        "fields": {
+            "idAuthor": 14,
+            "idBook": 14
+        }
+    }
+
+
+
+    ,
+    {
+        "model": "bookworms.authorshow",
+        "pk": 15,
+        "fields": {
+            "name": "F. Scott",
+            "surname": "Fitzgerald",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 15,
+        "fields": {
+            "title": "The Great Gatsby",
+            "genre": "Classic",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/classic2.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 17,
+        "fields": {
+            "idAuthor": 15,
+            "idBook": 15
+        }
+    }
+
+
+
+
+    ,
+    {
+        "model": "bookworms.authorshow",
+        "pk": 16,
+        "fields": {
+            "name": "Fyodor",
+            "surname": "Dostoyevsky",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 16,
+        "fields": {
+            "title": "Crime and Punishment",
+            "genre": "Classic",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/classic3.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 18,
+        "fields": {
+            "idAuthor": 16,
+            "idBook": 16
+        }
+    }
+
+
+
+
+    ,
+    {
+        "model": "bookworms.authorshow",
+        "pk": 17,
+        "fields": {
+            "name": "Donna",
+            "surname": "Tart",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 17,
+        "fields": {
+            "title": "The Secret History",
+            "genre": "Classic",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/classic4.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 19,
+        "fields": {
+            "idAuthor": 17,
+            "idBook": 17
+        }
+    },
+    {
+        "model": "bookworms.authorshow",
+        "pk": 18,
+        "fields": {
+            "name": "Elena",
+            "surname": "Armas",
+            "bioShow": "desc"
+        }
+    },
+    {
+        "model": "bookworms.book",
+        "pk": 18,
+        "fields": {
+            "title": "The Spanish Love Deception",
+            "genre": "Romance",
+            "description": "<Replace with the book description from a legitimate source>",
+            "coverImage": "/images/romance4.jpg"
+        }
+    },
+    {
+        "model": "bookworms.authorwrotebook",
+        "pk": 20,
+        "fields": {
+            "idAuthor": 18,
+            "idBook": 18
+        }
+    }
 ]
+
 

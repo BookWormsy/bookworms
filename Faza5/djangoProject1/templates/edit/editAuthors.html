@@ -1,0 +1,166 @@
+<!-- Milena Jovanovic 0327/2020!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="css/bootstrap-icons.css" rel="stylesheet"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+            rel="stylesheet"
+    />
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+    ></script>
+    <script>
+        //$(function () {
+        // $("#header").load("../header/header.html");
+        //});
+    </script>
+    <link rel="icon" href="../images/logo.png"/>
+    <title>bookworms</title>
+    <!-- ovde stil -->
+    <link rel="stylesheet" href="editAuthors.css"/>
+    <link rel="stylesheet" href="../header/headerStyle.css">
+
+</head>
+<body>
+<div class="row mb-sm-5">
+    <nav
+            class="navbar navbar-expand-sm navbar-light col-sm-12"
+            style="background-color: rgba(189, 80, 80, 1)"
+    >
+        <div class="container-fluid justify-content-center col-sm-12">
+            <div class="col-sm-4">
+                <input
+                        type="text"
+                        class="search-click"
+                        name="search-click"
+                        placeholder="search here..."
+                        id="myInput"
+                />
+            </div>
+            <script>
+                var input = document.getElementById("myInput");
+                input.addEventListener("keypress", function (event) {
+                    if (event.key == "Enter") {
+                        event.preventDefault();
+                        window.location.href = '../search result/searchResult.html';
+                    }
+                })
+            </script>
+            <div class="naslovHeader text-center col-sm-4">
+                <a class="navbar-brand" href="header.html">
+                    <small><i class="bi bi-book"></i></small>
+                    <!-- <img src="logo.png" style="width: 40%; margin-left: 10px" /> -->
+                </a>
+                <a href="../home page/homePage.html" class="link-naslovHeader">bookworms</a>
+            </div>
+
+            <div class="col-sm-4 d-flex justify-content-end">
+                <a href="../reviewerProfilePage/reviewerProfilePage.html">
+                    <img
+                            id="profile-icon"
+                            src="../images/reviewerProfilePic.png"
+                            alt=""
+                    />
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container-fluid">
+    <h4><a class="singup text-center">edit profile</a></h4>
+    <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <div class="container-signup text-center">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 text-sm-center">
+                        <div class="card shadow p-3 mb-5 bg-body rounded bg-body">
+                            <div class="m-3">
+                                <img src="../images/reviewerProfilePic.png" alt="profilna slika" class="rounded-pill">
+                            </div>
+                            <div class="inputBox">
+                                <label for="customFile">change photo</label>
+                                <input type="file" class="form-control" id="customFile" value="change image"/>
+                            </div>
+                            <div class="inputBox">
+                                <label for="user">change username</label>
+                                <input type="text" value="author1" id="user"/>
+                            </div>
+                            <div class="inputBox">
+                                <label for="bio">change bio</label>
+                                <textarea id=" bio"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-sm-center">
+                        <div class="card shadow p-3 mb-5 bg-body rounded bg-body">
+                            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active ">
+                                        <div class="card shadow p-3 mb-5 bg-body rounded bg-body"
+                                             style="height: 20rem; border-color: transparent">
+                                            <img class="card-img-top" src="../images/classic1.jpg" alt="Card image cap"
+                                                 style="height: 15rem; width: auto;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Mocking bird</h5>
+                                                <a href="#" class="btn btn-dark">remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card shadow p-3 mb-5 bg-body rounded bg-body"
+                                             style="height: 20rem; border-color: transparent">
+                                            <img class="card-img-top" src="../images/romance1.jpg" alt="Card image cap"
+                                                 style="height: 15rem; width: auto;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The Fault in our stars</h5>
+                                                <a href="#" class="btn btn-dark">remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card shadow p-3 mb-5 bg-body rounded bg-body"
+                                             style="height: 20rem; border-color: transparent">
+                                            <img class="card-img-top m-1" src="../images/psychology1.jpg"
+                                                 alt="Card image cap" style="height: 15rem; width: auto;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">The hapiness hypothesis</h5>
+                                                <a href="#" class="btn btn-dark">remove</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                            data-bs-slide="prev" id="prev-btn">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                            data-bs-slide="next" id="next-btn">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <a href="../authorProfilePage/authorProfilePage.html">
+                                <button class="enter">apply</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

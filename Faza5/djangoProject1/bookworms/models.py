@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
 
@@ -86,20 +87,23 @@ class Author(models.Model):
         db_table = 'Author'
 
 class Book(models.Model):
-    idBook = models.IntegerField(primary_key=True)
+    idBook = models.AutoField(primary_key=True)
     title = models.CharField(max_length=45)
     genre = models.CharField(max_length=60)
     description = models.TextField()
     coverImage = models.ImageField(upload_to='images/', default='images/userProfile.svg')
+    rating_fin = models.FloatField(null=True, default=0)
     class Meta:
         db_table = 'Book'
 
 class ReadList(models.Model):
     idUser = models.ForeignKey(UsernamesPasswords, on_delete=models.CASCADE, db_column='idUser')
     idBook = models.ForeignKey(Book, on_delete=models.CASCADE, db_column='idBook')
-    rating = models.IntegerField(null=True)
+
     class Meta:
         db_table = 'ReadList'
+
+
 
 class WishList(models.Model):
     idUser = models.ForeignKey(UsernamesPasswords, on_delete=models.CASCADE, db_column='idUser')
@@ -155,6 +159,12 @@ class ChallengeBooks(models.Model):
     class Meta:
         db_table = 'ChallengeBooks'
 
+class TakesChallenge(models.Model):
+    idChallenge = models.ForeignKey(Challenge, on_delete=models.CASCADE)
+    idUser = models.ForeignKey(UsernamesPasswords, on_delete=models.CASCADE, db_column='idUser')
+    class Meta:
+        db_table = 'TakesChallenge'
+
 class Achievement(models.Model):
     idAchievement = models.AutoField(primary_key=True)
     idBadge = models.ForeignKey(Badge, on_delete=models.CASCADE)
@@ -162,17 +172,19 @@ class Achievement(models.Model):
     class Meta:
         db_table = 'Achievement'
 
-class Administrator(models.Model):
-    idAdmin = models.AutoField(primary_key=True)
-    username = models.CharField(max_length=45)
-    password = models.CharField(max_length=45)
-    class Meta:
-        db_table = 'Administrator'
 
 class Request(models.Model):
     idRequest = models.AutoField(primary_key=True)
     idUser = models.ForeignKey(User, on_delete=models.CASCADE, db_column='idUser')
-    name = models.CharField(max_length=45)
-    surname = models.CharField(max_length=45)
+    name = models.CharField(max_length=45, null=True)
+    surname = models.CharField(max_length=45, null=True)
+    type = models.CharField(max_length=45)
     class Meta:
         db_table = 'Request'
+
+class Rating(models.Model):
+    idRating = models.AutoField(primary_key=True)
+    idBook = models.ForeignKey(Book, on_delete=models.CASCADE, db_column='idBook')
+    rating = models.IntegerField()
+    class Meta:
+        db_table = 'Rating'
